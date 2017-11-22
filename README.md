@@ -1,7 +1,12 @@
 Config files and instructions for reinstallation
 
 # Package list
-* fonts-inconsolata
+* node
+* npm
+* atoms
+* terminator
+* fonts-inconsolata / tts-inconsolata
+* git
 * meld
 
 # NPM Global Package list
