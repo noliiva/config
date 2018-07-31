@@ -32,8 +32,8 @@
   fa = fetch --all
   fap = fetch --all --prune
 [user]
-	email = elyadohr@gmail.com
-	name = Laure IVANOVITCH
+	email = X
+	name = noliiva
 [core]
   pager = diff-so-fancy | less --tabs=4 -RFX
 [interactive]
