@@ -43,4 +43,6 @@
 * French Language
 * Path Intellisense
 * Prettier
+* Git Blame
+* Git History
 * SVG
