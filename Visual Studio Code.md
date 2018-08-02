@@ -41,8 +41,8 @@
 * EditorConfig for VS Code
 * ESLint
 * French Language
-* Path Intellisense
-* Prettier
 * Git Blame
 * Git History
+* Path Intellisense
+* Prettier
 * SVG
