@@ -1,13 +1,23 @@
 Config files and instructions for reinstallation
 
-# Package list
+# Linux install
+## Packages
 * node
 * npm
-* atoms
 * terminator
-* fonts-inconsolata / tts-inconsolata
 * git
 * meld
+* fish
+* oh-my-fish
 
-# NPM Global Package list
+## NPM Global Packages
 * diff-so-fancy
+* yarn
+
+## Fonts
+* Inconsolata
+* Roboto
+
+## Theme
+* Arc
+* Papyrus Icons set
