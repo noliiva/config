@@ -1,18 +1,27 @@
 # User settings
 ```
 {
-    "window.zoomLevel": 0,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.statusBar.feedback.visible": false,
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-    },
-    "editor.formatOnSave": true,
-    "editor.renderWhitespace": "all",
-    "files.autoSave": "onFocusChange",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorCustomizations": {
+    "editorWarning.foreground": "#E5C07B"
+  },
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 200,
+  "files.autoSave": "onFocusChange",
+  "editor.renderWhitespace": "all",
+  "explorer.confirmDragAndDrop": false,
+  "window.zoomLevel": 0,
+  "workbench.statusBar.feedback.visible": false,
+  "eslint.enable": true,
+  "window.titleBarStyle": "custom",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.tabSize": 2,
 }
 ```
 
