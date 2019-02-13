@@ -26,5 +26,5 @@ Config files and instructions for reinstallation
 ## Calibre
 | Champ de destination | Modèle source |
 | --- | --- |
-| title | {series_index:0>2s|T.\| ◊ }{title} |
+| title | {series_index:0>2s\|T.\| ◊ }{title} |
 | tags  | {series}-{series_index}           |
