@@ -21,3 +21,10 @@ Config files and instructions for reinstallation
 ## Theme
 * Arc
 * Papyrus Icons set
+
+# Misc
+## Calibre
+| Champ de destination | Modèle source |
+| --- | --- |
+| title | {series_index:0>2s|T.| ◊ }{title} |
+| tags  | {series}-{series_index}           |
