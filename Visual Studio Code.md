@@ -55,3 +55,4 @@
 * Path Intellisense
 * Prettier
 * SVG
+* Quokka.js
