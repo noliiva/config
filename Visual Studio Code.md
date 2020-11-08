@@ -1,27 +1,27 @@
 # User settings
 ```
 {
-  "workbench.colorTheme": "Atom One Dark",
-  "workbench.colorCustomizations": {
-    "editorWarning.foreground": "#E5C07B"
-  },
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "emmet.triggerExpansionOnTab": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 200,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 200,
-  "files.autoSave": "onFocusChange",
-  "editor.renderWhitespace": "all",
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "window.zoomLevel": 0,
-  "workbench.statusBar.feedback.visible": false,
-  "eslint.enable": true,
-  "window.titleBarStyle": "custom",
+  "files.autoSave": "onFocusChange",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "editor.tabSize": 2,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorCustomizations": {
+    "editorWarning.foreground": "#E5C07B"
+  }
 }
 ```
 
@@ -43,15 +43,11 @@
 
 # Extensions
 * Atom One Dark Theme
-* Auto Import
-* Auto-Open Markdown
-* Debugger from Chrome
-* Dot.ENV
+* DotENV
 * EditorConfig for VS Code
 * ESLint
-* French Language
 * Git Blame
-* Git History
+* Git Graph
 * Path Intellisense
 * Prettier
 * SVG
