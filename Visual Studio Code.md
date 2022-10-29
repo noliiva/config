@@ -8,20 +8,27 @@
   "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 200,
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "njk": "html"
   },
   "emmet.triggerExpansionOnTab": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.autoSave": "onFocusChange",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "stylelint.validate": ["css", "scss", "javascript", "javascriptreact"],
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "editorWarning.foreground": "#E5C07B"
-  }
+  },
+  "extensions.ignoreRecommendations": true,
+  "[nunjucks]": {
+    "editor.defaultFormatter": "okitavera.vscode-nunjucks-formatter"
+  },
+  "workbench.startupEditor": "none"
 }
 ```
 
@@ -43,12 +50,15 @@
 
 # Extensions
 * Atom One Dark Theme
-* DotENV
+* Docker
+* DotENV / ENV
 * EditorConfig for VS Code
 * ESLint
 * Git Blame
 * Git Graph
 * Path Intellisense
 * Prettier
-* SVG
 * Quokka.js
+* Stylelint
+* SVG
+* Tailwind CSS IntelliSense
