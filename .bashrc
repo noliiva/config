@@ -1,5 +1,3 @@
-export EDITOR="nano"
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -175,6 +173,15 @@ export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}
 sudo /etc/init.d/dbus start &> /dev/null
 
 # Run tmux at start
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#  exec tmux
+#fi
+
+# Aliases
+alias noliiva="eval \`ssh-agent\` && ssh-add"
+
+## Client xxx
+alias go="cd ~/development/clients/xxx/project"
+alias api="cd ~/development/clients/xxx/project/api/public && sudo php -S 0.0.0.0:8004"
+alias front="cd ~/development/clients/xxx/project/front && npm run dev"
+alias vvf="eval \`ssh-agent\` && ssh-add ~/.ssh/id_xxx"
