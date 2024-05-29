@@ -5,11 +5,8 @@
   rebase = preserve
   ff = true
 [merge]
-  tool = mymeld
   ff = false
   conflictstyle = diff3
-[mergetool "mymeld"]
-  cmd = meld $LOCAL $BASE $REMOTE -o $MERGED --diff $BASE $LOCAL --diff $BASE $REMOTE
 [push]
   default = simple
 [commit]
@@ -32,10 +29,11 @@
   fa = fetch --all
   fap = fetch --all --prune
 [user]
-	email = X
-	name = noliiva
+  email = xxx.xxx@xxxxx.com
+  name = xxx
 [core]
   pager = diff-so-fancy | less --tabs=4 -RFX
+  excludesfile = /home/xxx/.gitignore
 [interactive]
   diffFilter = (echo && diff-so-fancy | less --tabs=4 -RFX)
 [diff]
