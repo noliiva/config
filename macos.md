@@ -50,13 +50,12 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
      <summary>config</summary>
 
      #### Scrolling     
-     **Scrolling mode:** By Pixels\
-     **Distance:** 128px
+     *Scrolling mode:* By Pixels\
+     *Distance:* 128px
 
      #### Pointer
-     **Pointer acceleration:** 0.6875\
-     **Pointer speed:** 0.1
-     ```
+     *Pointer acceleration:* 0.6875\
+     *Pointer speed:* 0.1     
   </details>
 - [Hidden Bar](https://apps.apple.com/us/app/hidden-bar/id1452453066)
 - [Superchage](https://sindresorhus.com/supercharge)\
