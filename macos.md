@@ -45,6 +45,19 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
 ## Apps
 - [AltTab](https://alt-tab-macos.netlify.app/)
 - [Rectangle](https://rectangleapp.com/)
+- [Linear Mouse](https://linearmouse.app/)
+  <details>
+     <summary>config</summary>
+
+     #### Scrolling     
+     **Scrolling mode:** By Pixels\
+     **Distance:** 128px
+
+     #### Pointer
+     **Pointer acceleration:** 0.6875\
+     **Pointer speed:** 0.1
+     ```
+  </details>
 - [Hidden Bar](https://apps.apple.com/us/app/hidden-bar/id1452453066)
 - [Superchage](https://sindresorhus.com/supercharge)\
   Prevent accidental app quits by remapping Cmd+Q\
@@ -55,7 +68,7 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
 - [Stats](https://mac-stats.com/)
 - [Hammerspoon](https://www.hammerspoon.org/)
   <details>
-    <summary>Config</summary>
+    <summary>config</summary>
     
     ```
       -[[===================
@@ -103,10 +116,10 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
       hs.timer.doEvery(60, updateDiscordMenuBar)
     ```
   </details>
-- [Nerd Fonts](https://www.nerdfonts.com/)
+- [Homebrew](https://brew.sh/)
 - [Ghostty](https://ghostty.org/)
   <details>
-    <summary>Config</summary>
+    <summary>config</summary>
     
     ```
       theme = catppuccin-mocha
@@ -154,22 +167,144 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
       keybind = alt+shift+delete=close_surface
     ```
   </details>
+  <details>
+     <summary>.zshrc</summary>
+
+     ```
+     export PATH="/opt/homebrew/bin:$PATH"
+   
+     eval "$(starship init zsh)"
+         
+     eval "$(brew shellenv)"
+     autoload -Uz +X compinit && compinit
+         
+     export NVM_DIR="$HOME/.nvm"
+        [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+        [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+         
+     zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+     zstyle ':completion:*' menu select
+
+     
+     # Aliases
+     alias ls="ls -la --color"
+     alias nano="/opt/homebrew/bin/nano"
+     ```
+  </details>
+- [Nerd Fonts](https://www.nerdfonts.com/)
+- [Starship](https://starship.rs/)
+  <details>
+     <summary>~/.config/starship.toml</summary>
+
+     ```
+     # Get editor completions based on the config schema
+     "$schema" = 'https://starship.rs/config-schema.json'
+      
+     # Inserts a blank line between shell prompts
+     add_newline = true
+     continuation_prompt = "[❯❯ ](dimmed green)"
+
+     
+     format = """
+     $directory\
+     $git_branch\
+     $git_state\
+     $git_status\
+     $line_break\
+     $character"""
+      
+     right_format = """
+     $cmd_duration"""
+      
+     palette = 'catppuccin_mocha'
+      
+      
+     [directory]
+     style = "lavender"
+     format = "[󰀵 $path]($style)"
+     truncation_length = 3
+     truncation_symbol = "…/"
+      
+     [git_branch]
+     symbol = ""
+     style = "dimmed yellow"
+     format = '[ $symbol $branch ]($style)'
+      
+     [git_status]
+     style = "yellow"
+     format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+     conflicted = ""
+     untracked = ""
+     modified = ""
+     staged = ""
+     renamed = ""
+     deleted = ""
+     stashed = "≡"
+      
+     [git_state]
+     format = '\([$state( $progress_current/$progress_total)]($style)\) '
+     style = "bright-black"
+      
+     [character]
+     success_symbol = '[❯](bold fg:green)'
+     error_symbol = '[❯](bold fg:red)'
+     vimcmd_symbol = '[❮](bold fg:green)'
+     vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
+     vimcmd_replace_symbol = '[❮](bold fg:lavender)'
+     vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+      
+     [cmd_duration]
+     format = "[in $duration]($style)"
+     show_milliseconds = true
+     style = "dimmed surface2"
+     show_notifications = true
+     min_time_to_notify = 45000
+      
+     [palettes.catppuccin_mocha]
+     rosewater = "#f5e0dc"
+     flamingo = "#f2cdcd"
+     pink = "#f5c2e7"
+     mauve = "#cba6f7"
+     red = "#f38ba8"
+     maroon = "#eba0ac"
+     peach = "#fab387"
+     yellow = "#f9e2af"
+     green = "#a6e3a1"
+     teal = "#94e2d5"
+     sky = "#89dceb"
+     sapphire = "#74c7ec"
+     blue = "#89b4fa"
+     lavender = "#b4befe"
+     text = "#cdd6f4"
+     subtext1 = "#bac2de"
+     subtext0 = "#a6adc8"
+     overlay2 = "#9399b2"
+     overlay1 = "#7f849c"
+     overlay0 = "#6c7086"
+     surface2 = "#585b70"
+     surface1 = "#45475a"
+     surface0 = "#313244"
+     base = "#1e1e2e"
+     mantle = "#181825"
+     crust = "#11111b"%
+     ```
+  </details>
 - VSCode
   <details>
-    <summary>settings</summary>
+    <summary>settings.json</summary>
 
     ```json
-      "editor.fontFamily": "IosevkaTerm Nerd Font, FiraMono Nerd Font",
-      "editor.fontLigatures": false,
-      "editor.fontSize": 16,
-      "editor.lineHeight": 22,
+    "editor.fontFamily": "IosevkaTerm Nerd Font, FiraMono Nerd Font",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
       
-      "editor.formatOnSave": true,
+    "editor.formatOnSave": true,
     ```
   </details>
   
   <details>
-    <summary>keybindings</summary>
+    <summary>keybindings.json</summary>
 
     ```json
       [
