@@ -2,7 +2,8 @@
 
 ## FR - PC Keyboard
 ### Remap numpad .
-Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusktr/1e5e516df4e8032cbc3d\
+Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusktr/1e5e516df4e8032cbc3d
+
 `~/Library/KeyBindings/DefaultKeyBinding.dict`
 ```
 {
