@@ -1,4 +1,4 @@
-# Mac OS survival confir for Windows user
+# Mac OS survival config for Windows user
 
 ## FR - PC Keyboard
 ### Remap numpad .
@@ -44,11 +44,11 @@
 - [AltTab](https://alt-tab-macos.netlify.app/)
 - [Rectangle](https://rectangleapp.com/)
 - [Hidden Bar](https://apps.apple.com/us/app/hidden-bar/id1452453066)
-- [Superchage](https://sindresorhus.com/supercharge)
-  Prevent accidental app quits by remapping Cmd+Q
-  Open files with Enter
-  Auto-open preview after screeshot
-  Quit app after closing all its windows
+- [Superchage](https://sindresorhus.com/supercharge)\
+  Prevent accidental app quits by remapping Cmd+Q\
+  Open files with Enter\
+  Auto-open preview after screeshot\
+  Quit app after closing all its windows\
   Offer to install apps after downloading a .dmg & move .dmg to trash after install
 - [Stats](https://mac-stats.com/)
 - [Hammerspoon](https://www.hammerspoon.org/)
