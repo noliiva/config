@@ -121,49 +121,54 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
     <summary>config</summary>
     
     ```
-      theme = catppuccin-mocha
+    theme = catppuccin-mocha
     
-      cursor-invert-fg-bg = true
+    cursor-invert-fg-bg = true
+    split-divider-color = #45475a
+    unfocused-split-opacity = 0.33
+    
+    window-padding-x = 10
+    window-padding-y = 8
+    
+    font-family = Iosevka
+    font-size = 16
+    font-feature = -liga
+    
+    copy-on-select = clipboard
+    clipboard-trim-trailing-spaces = true
       
-      window-padding-x = 8
+    ###############
+    # KEYBINDINGS #
+    ###############
       
-      font-family = Iosevka
-      font-size = 16
-      font-feature = -liga
+    # Cmd+C → Ctrl+C (cancel)
+    keybind = cmd+c=text:\x03
+    
+    # Cmd+X → Ctrl+X (nano exit)
+    keybind = cmd+x=text:\x18
+    
+    # Cmd+K → Ctrl+K (nano cut line)
+    keybind = cmd+k=text:\x0B
+    
+    # Cmd+U → Ctrl+U (nano uncut)
+    keybind = cmd+u=text:\x15
+    
+    # opt+suppr → Ctrl+W (delete next word)
+    keybind = alt+delete=text:\x1bd
+    
+    # cmd+suppr → Ctrl+K (delete end of line)
+    keybind = cmd+delete=text:\x0b
       
-      copy-on-select = true
-      clipboard-trim-trailing-spaces = true
-      
-      ###############
-      # KEYBINDINGS #
-      ###############
-      
-      # Cmd+C → Ctrl+C (cancel)
-      keybind = cmd+c=text:\x03
-      
-      # Cmd+X → Ctrl+X (nano exit)
-      keybind = cmd+x=text:\x18
-      
-      # Cmd+K → Ctrl+K (nano cut line)
-      keybind = cmd+k=text:\x0B
-      
-      # Cmd+U → Ctrl+U (nano uncut)
-      keybind = cmd+u=text:\x15
-      
-      # opt+suppr → Ctrl+W (delete next word)
-      keybind = alt+delete=text:\x1bd
-      
-      # cmd+suppr → Ctrl+K (delete end of line)
-      keybind = cmd+delete=text:\x0b
-      
-      # Splits commands
-      keybind = alt+kp_add=new_split:right
-      keybind = alt+kp_subtract=new_split:down
-      keybind = alt+up=goto_split:up
-      keybind = alt+left=goto_split:left
-      keybind = alt+down=goto_split:down
-      keybind = alt+right=goto_split:right
-      keybind = alt+shift+delete=close_surface
+    # Splits commands
+    keybind = alt+kp_substract=new_split:left
+    keybind = alt+kp_add=new_split:right
+    keybind = alt+page_up=new_split:up
+    keybind = alt+page_down=new_split:down
+    keybind = alt+shift+up=goto_split:up
+    keybind = alt+shift+left=goto_split:left
+    keybind = alt+shift+down=goto_split:down
+    keybind = alt+shift+right=goto_split:right
+    keybind = alt+shift+delete=close_surface
     ```
   </details>
   <details>
