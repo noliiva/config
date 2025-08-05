@@ -160,7 +160,7 @@ Source: https://apple.stackexchange.com/a/408880 / https://gist.github.com/trusk
     keybind = cmd+delete=text:\x0b
       
     # Splits commands
-    keybind = alt+kp_substract=new_split:left
+    keybind = alt+kp_subtract=new_split:left
     keybind = alt+kp_add=new_split:right
     keybind = alt+page_up=new_split:up
     keybind = alt+page_down=new_split:down
